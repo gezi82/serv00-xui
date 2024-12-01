@@ -1,0 +1,45 @@
+下载脚本
+
+https://pan.quark.cn/s/f704a6c74c28
+
+上传脚本
+
+x-ui.sh
+
+添加权限
+
+chmod +x x-ui.sh
+
+运行脚本
+
+./x-ui.sh
+
+安装xui
+
+输入选择: 1安装
+
+根据提示依次输入
+
+是否继续: y
+
+账户名: rg520
+
+密码: 123456
+
+访问端口: 13579
+
+流量监测端口: 10002
+
+按回车键 返回主菜单
+
+在serv00上先放行两个端口，一个是xui访问端口，另一个是监听端口，serv00服务器ip加端口号登入xui面板，搭建节点随机的端口，拿来再在serv00上放行，这样节点才连得上
+
+可尝试把节点端口改成80或443套cdn
+
+反正xui搭建的节点基本上是直连，套cdn说难也不难
+直连慢，但作为干净的ip可用来浏览注册一些网站
+
+
+serv00一键安装xui
+
+wget -O x-ui.sh -N --no-check-certificate https://raw.githubusercontent.com/amclubs/am-serv00-x-ui/main/x-ui.sh && chmod +x x-ui.sh && ./x-ui.sh
